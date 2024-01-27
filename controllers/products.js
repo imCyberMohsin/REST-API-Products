@@ -10,7 +10,7 @@ const getAllProducts = async (req, res) => {
     }
     if (featured) {
         queryObject.featured = featured;
-    }
+    } 
     if (name) {
         queryObject.name = { $regex: name, $options: "i", };
     }
