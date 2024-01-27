@@ -13,7 +13,7 @@ const getAllProducts = async (req, res) => {
     } 
     if (name) {
         queryObject.name = { $regex: name, $options: "i", };
-    }
+    } 
 
     let apiData = productModel.find(queryObject)
     if (sort) {
